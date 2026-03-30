@@ -1,0 +1,9 @@
+//FUNÇÃO DE CADASTRO DE LEADS
+
+  function cadastro(agent) {
+    const { nome, email, whatsapp } = agent.parameters;
+    const data = [{Nome: nome, Email: email, Telefone: whatsapp}];
+    //colocar o link da planilha gerada na API Sheet.Best
+    axios.post("AQUI VAI A SUA API SHEET", data);
+    agent.add(?  Bacana ${nome}, Muito obrigado por suas informações pessoais.);
+  }
